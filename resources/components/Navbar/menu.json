@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Home",
+        "hasChildren": false,
+        "icon": "home",
+        "children": []
+    },
+    {
+        "name": "Academias",
+        "icon": "dumbbell",
+        "hasChildren": true,
+        "children": [
+            {
+                "name": "Academais São Paulo",
+                "children": [
+                    {
+                        "name": "Aclimação"
+                    },
+                    {
+                        "name": "Anália Franco"
+                    }
+                ]
+            },
+            {
+                "name": "Academais Rio de Janeiro",
+                "children": [
+                    {
+                        "name": "Lebon"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Produtos",
+        "hasChildren": false,
+        "icon": "boxes",
+        "children": []
+    }
+]

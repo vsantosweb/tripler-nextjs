@@ -1,0 +1,307 @@
+[
+    {
+        "id": 1,
+        "name": "Lazer e Bem Estar",
+        "slug": "lazer-bem-estar",
+        "trips": [
+            {
+                "id": 1,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "Kianside - Jaunitaland PA",
+                "slug": "kianside-jaunitaland-pa",
+                "description": "Eius voluptates recusandae nemo eligendi autem hic fugiat. Quasi et laboriosam eaque accusamus. Dicta maxime aliquam eos. Fugit voluptas facere quia dolorem vero.",
+                "schedules_count": 4,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            },
+            {
+                "id": 2,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "Bodeville - West Concepcion LA",
+                "slug": "bodeville-west-concepcion-la",
+                "description": "Laudantium est voluptates qui aliquid dolor unde. Occaecati ut eaque libero repudiandae at nemo ut.",
+                "schedules_count": 4,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            },
+            {
+                "id": 8,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "Damienton - South Jodyburgh SD",
+                "slug": "damienton-south-jodyburgh-sd",
+                "description": "Eligendi error voluptate consequuntur. Sed numquam eligendi facere quibusdam. Sint veritatis aut enim iste iusto consequatur. Dolores facere id est atque. Voluptas minima saepe quis minima enim hic praesentium.",
+                "schedules_count": 2,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Praias",
+        "slug": "praias",
+        "trips": [
+            {
+                "id": 4,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "Montymouth - West Ezekielberg AK",
+                "slug": "montymouth-west-ezekielberg-ak",
+                "description": "Officia quae aliquid sint repudiandae tempore inventore. Sed sunt dolor dignissimos asperiores voluptatem molestiae omnis.",
+                "schedules_count": 3,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            },
+            {
+                "id": 6,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "Soniahaven - New Dasiaside LA",
+                "slug": "soniahaven-new-dasiaside-la",
+                "description": "Qui vitae sunt quis sed quia atque placeat. Ad ex et perferendis dignissimos omnis.",
+                "schedules_count": 4,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            },
+            {
+                "id": 9,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "Muellerbury - Loushire WI",
+                "slug": "muellerbury-loushire-wi",
+                "description": "Autem modi incidunt et blanditiis porro ut nam.",
+                "schedules_count": 3,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            },
+            {
+                "id": 10,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "Emanuelmouth - South Deja NE",
+                "slug": "emanuelmouth-south-deja-ne",
+                "description": "Eveniet recusandae et aut voluptatem.",
+                "schedules_count": 3,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            },
+            {
+                "id": 12,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "Lake Hoytland - Lake Onieshire WI",
+                "slug": "lake-hoytland-lake-onieshire-wi",
+                "description": "Consequatur nisi iusto et minus dicta dolor ut. Possimus est aliquid dolores aut.",
+                "schedules_count": 2,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            },
+            {
+                "id": 14,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "North Colt - Juneview MS",
+                "slug": "north-colt-juneview-ms",
+                "description": "Illo laudantium quos beatae quis corrupti voluptatem.",
+                "schedules_count": 3,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            },
+            {
+                "id": 15,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "Port Estevan - West Alleneshire AR",
+                "slug": "port-estevan-west-alleneshire-ar",
+                "description": "Aspernatur suscipit est nulla modi earum voluptas. Corrupti ex aperiam voluptatem nemo inventore.",
+                "schedules_count": 2,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Eco Turismo",
+        "slug": "ecotur",
+        "trips": [
+            {
+                "id": 5,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "Lake Victor - Lake Lew PA",
+                "slug": "lake-victor-lake-lew-pa",
+                "description": "Facilis deserunt officiis cum et. Assumenda doloremque alias consectetur. Omnis nam a quasi. Pariatur perspiciatis eum beatae quisquam consequuntur.",
+                "schedules_count": 2,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            },
+            {
+                "id": 7,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "Marlenburgh - South Cynthiaburgh IN",
+                "slug": "marlenburgh-south-cynthiaburgh-in",
+                "description": "Asperiores inventore qui nemo voluptatem. Velit et architecto esse nihil et voluptatum omnis et. Modi facere et libero quibusdam. Fuga autem aut fugit veritatis.",
+                "schedules_count": 4,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Eventos",
+        "slug": "eventos",
+        "trips": [
+            {
+                "id": 3,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "South Joanaview - New Sethborough NY",
+                "slug": "south-joanaview-new-sethborough-ny",
+                "description": "Accusamus perferendis ut dignissimos autem sunt placeat quos. Totam quia optio et et. Veritatis qui et commodi dolores. Praesentium similique possimus est autem omnis optio dicta. Ut sint tempora magnam reprehenderit praesentium.",
+                "schedules_count": 4,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            },
+            {
+                "id": 13,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "Feestland - South Nicholauston OR",
+                "slug": "feestland-south-nicholauston-or",
+                "description": "Sed at facilis deleniti. Optio neque repellat animi eius omnis. Dignissimos veniam et consectetur et placeat consectetur ipsam. Provident accusantium eos dignissimos voluptatem voluptas doloribus.",
+                "schedules_count": 3,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Parques",
+        "slug": "parques",
+        "trips": [
+            {
+                "id": 11,
+                "agency_name": "Mario Bross Turismo LTDA",
+                "agency_avatar": null,
+                "name": "North Elfrieda - North Danielletown WI",
+                "slug": "north-elfrieda-north-danielletown-wi",
+                "description": "Atque possimus culpa est.",
+                "schedules_count": 3,
+                "thumbnail": "http://lorempixel.com/g/700/700/",
+                "images": [
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/",
+                    "http://lorempixel.com/g/700/700/"
+                ]
+            }
+        ]
+    }
+]
