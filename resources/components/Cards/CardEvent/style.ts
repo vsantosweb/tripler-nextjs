@@ -47,7 +47,7 @@ export const CardEventBody = styled.a`
   display: flex;
   flex-direction: column;
   gap:5px;
-  padding: .3em .8em;
+  padding: .3em 0em;
   text-decoration: none;
   position: relative;
   color: inherit;

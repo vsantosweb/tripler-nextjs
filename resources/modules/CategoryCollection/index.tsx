@@ -13,15 +13,14 @@ const mediaSizes = {
 }
 
 export default function CategoryCollection({ data }: any) {
-    console.log(data.trips, 'okdsaodkaso')
     return (
         data.map((category, key) => (
             <Collection.Container key={key}>
                 <Collection.Header>
                     <Collection.Title>{category.name} </Collection.Title>
-                    <div>
-                        <button className={`slideNav el-${category.id}-prev slide-nav swiper-button-prev`}>{"<"}</button>
-                        <button className={`slideNav el-${category.id}-next slide-nav swiper-button-next`}>{">"}</button>
+                    <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+                        <button className={`slideNav el-${category.id}-prev `}><i className={'las la-angle-left'}></i></button>
+                        <button className={`slideNav el-${category.id}-next`}><i className={'las la-angle-right'}></i></button>
                     </div>
                 </Collection.Header>
 
