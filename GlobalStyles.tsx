@@ -13,20 +13,7 @@ const GlobalStyles = css`
   *:focus {
     outline: none !important;
   }
-  .slideNav {
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    background: none;
-    border: solid 1px;
-    outline: none;
-    box-shadow: none;
-    margin-bottom: 0;
-    margin-right: 0.4em;
-    &:focus {
-      outline: none;
-    }
-  }
+
 `;
 export const ViewPort = styled.main`
   max-width: ${({ theme }: any) => theme.defaultContainer.width};

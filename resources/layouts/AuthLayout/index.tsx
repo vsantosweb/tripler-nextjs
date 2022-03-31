@@ -9,7 +9,6 @@ export default function AuthLayout({ children }) {
             <Styled.AuthContainer>
                 <Styled.AuthHeader><Logo width={"80px"} /></Styled.AuthHeader>
                 <Styled.AuthWrapper>
-                    <Styled.AuthContent>
                     {children}
                     <Styled.AuthFooter>
                         <small>
@@ -24,7 +23,6 @@ export default function AuthLayout({ children }) {
                             Direitos autorais {new Date().getFullYear()} - Tripler.com.br®
                         </small>
                     </Styled.AuthFooter>
-                    </Styled.AuthContent>
                 </Styled.AuthWrapper>
             </Styled.AuthContainer>
         </React.Fragment>

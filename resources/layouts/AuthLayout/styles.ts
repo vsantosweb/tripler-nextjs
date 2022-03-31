@@ -7,16 +7,12 @@ export const AuthContainer = styled.div`
 `;
 
 export const AuthWrapper = styled.div`
+  width: 380px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: ${({ theme }: any) => theme.defaultContainer.spacing};
 `;
 
-export const AuthContent = styled.div`
-  width: 380px;
-
-`
 export const AuthHeader = styled.header`
   display: flex;
   border-bottom: solid 1px #ddd;
