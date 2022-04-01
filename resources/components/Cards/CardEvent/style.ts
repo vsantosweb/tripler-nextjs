@@ -15,7 +15,7 @@ export const CardEvent = styled.div`
   -moz-user-drag: none;
   -o-user-drag: none;
   &:hover {
-    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.07);
+    /* box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.07); */
     transition: all 0.5s;
     cursor: pointer;
   }

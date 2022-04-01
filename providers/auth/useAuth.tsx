@@ -1,6 +1,5 @@
 import React from 'react'
 import { AuthContext } from './AuthProvider';
-import { useRouter } from 'next/router'
 
 export default function useAuth(Component: React.ElementType) {
 

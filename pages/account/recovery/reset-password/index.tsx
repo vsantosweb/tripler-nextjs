@@ -1,33 +1,51 @@
 import { Button, FormControl, FormErrorMessage, FormLabel, Heading, Input, Stack, Text } from '@chakra-ui/react'
 import { NextPage } from 'next'
+import { useRouter } from 'next/router'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import api from '../../../api'
 import { AccountButton } from '../../styles'
 
-export async function getServerSideProps() {
-    // Fetch data from external API
-    const res = await fetch(`https://.../data`)
-    const data = await res.json()
-    // api.post('/customer/auth/password/validate-recovery-request', { email: history.query.email, token: history.query.token })
-    // .then(response => console.log(response))
-    // .catch((error) => console.log('DKSAOPASODKASOKSO'))
-    // Pass data to the page via props
-    return { props: { data } }
-  }
+export async function getServerSideProps(req, res) {
 
-export const Recovery: NextPage = ({ layout, history }: any) => {
+    const { error, data } = await api.post('/customer/auth/password/validate-recovery-request', { email: req.query.email, token: req.query.token })
+        .then(response => response.data)
+
+    return error ? {
+        redirect: {
+            permanent: false,
+            destination: '/account/login'
+        }
+    } : {
+        props: {
+            ...data
+        }
+    }
+}
+
+export const Recovery: NextPage = ({ layout, history, ...props }: any) => {
 
     React.useEffect(() => layout('AuthLayout'), [])
-    React.useEffect(() => {
 
-        console.log({ email: history.query.email, token: history.query.token })
-        
-    }, [history.query])
+    const router = useRouter();
+
     const { register, handleSubmit, watch, formState: { isValid, errors } } = useForm({ mode: 'onChange' });
 
+    const handleResetPassword = (formData) => {
+
+        api.post('/customer/auth/password/recovery', { ...formData, ...props })
+            .then(response => {
+                
+                if (response.data.error) throw new Error('Ocorreu um erro ao processar sua solicitação.');
+
+                return router.push({
+                    pathname: '/account/recovery/success',
+                    query: { recovered: true }
+                }, '/account/recovery/success');
+            })
+    }
     return (
-        <form>
+        <form onSubmit={handleSubmit(handleResetPassword)}>
             <Stack spacing={3}>
                 <Heading size={'lg'}>Crie uma nova asenha</Heading>
                 <Text>
@@ -47,7 +65,7 @@ export const Recovery: NextPage = ({ layout, history }: any) => {
                     />
                     <FormErrorMessage>{errors.password_confirmation?.message}</FormErrorMessage>
                 </FormControl>
-                <AccountButton rightIcon={<i className={'las la-key'}></i>} colorScheme={'primary'}>Redefinir minha senha</AccountButton>
+                <AccountButton type={'submit'} rightIcon={<i className={'las la-key'}></i>} colorScheme={'primary'}>Redefinir minha senha</AccountButton>
             </Stack>
         </form>
     )

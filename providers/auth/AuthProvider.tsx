@@ -20,7 +20,7 @@ type AuthContentType = {
     user: User;
     _rendering: boolean;
     signIn: (data: SignInCredentials) => Promise<any>
-    signOut: () => void
+    signOut: (redirectTo: any) => void
     _watch: () => void
     socialLogin: (credentails: any) => Promise<any>
     signUp: (signUpData: any) => any,
@@ -39,10 +39,12 @@ export function AuthProvier({ children }) {
 
     useEffect(() => {
         (async () => {
-            console.log('CHAMEEEEI')
 
             const token = await Cookie.get('token');
 
+            if (!token) setUser(null)
+
+            console.log('CHAMEI LOGOUT')
             if (token) {
 
                 await Axios.get(process.env.NEXT_PUBLIC_APP_API_URL + '/customer/auth/logged', {
@@ -58,6 +60,7 @@ export function AuthProvier({ children }) {
                         setUser(null)
                     })
             }
+
             setRendering(false)
 
         })()
@@ -78,15 +81,14 @@ export function AuthProvier({ children }) {
 
     }
 
-    async function signOut() {
+    async function signOut(redirectTo) {
 
-        const token = await Cookie.get('token');
-        await Axios.post(process.env.NEXT_PUBLIC_URL_API + '/client/customer/auth/logout')
-            .then(response => response.data)
+        await api.post('/customer/auth/logout')
+            .then(() => {
+                Cookie.remove('token');
+                _watch()
+            })
             .catch(error => error.response);
-        await Cookie.remove('token');
-        setUser(null)
-
     }
 
     async function signUp(signUpData: any) {

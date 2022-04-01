@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   
   const history = useRouter();
 
-  const [layout, setLayout] = React.useState<any>('DefaultLayout');
+  const [layout, setLayout] = React.useState<any>();
 
   return (
     <AuthProvier>

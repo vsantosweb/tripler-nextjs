@@ -1,4 +1,4 @@
-import { Input } from "@chakra-ui/react";
+import { Input, MenuButton } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 export const HeaderContainer = styled.header`
@@ -12,8 +12,11 @@ export const HeaderTop = styled.div`
     display:flex;
     justify-content: space-between;
 `
-
-export const MenuBar = styled.button`
+export const HeaderRightContent = styled.div`
+  display: flex;
+  gap: 10px;
+`
+export const MenuBar = styled(MenuButton)`
   border:solid 1px #ddd;
   display: flex;
   align-items: center;

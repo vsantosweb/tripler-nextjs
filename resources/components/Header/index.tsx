@@ -1,18 +1,58 @@
-import { Avatar, Input, InputGroup, InputLeftElement } from '@chakra-ui/react';
+import {
+    Avatar, Button, Input, InputGroup, InputLeftElement, Menu,
+    MenuButton,
+    MenuList,
+    MenuItem,
+    MenuItemOption,
+    MenuGroup,
+    MenuOptionGroup,
+    MenuDivider,
+} from '@chakra-ui/react';
+import { useRouter } from 'next/router';
 import React from 'react'
 import { theme } from '../../../theme';
 import Logo from '../../images/logo/tripler-logo.svg';
 import * as Styled from './styles';
+import { AuthContext } from '../../../providers/auth/AuthProvider';
+import useAuth from '../../../providers/auth/useAuth';
+import api from '../../../pages/api';
 
-export default function Header() {
+function Header() {
+
+    const router = useRouter();
+
+    const { user, signOut } = React.useContext(AuthContext);
+
     return (
         <Styled.HeaderContainer>
             <Styled.HeaderTop>
                 <Styled.HeaderTop><Logo width={'80px'} /></Styled.HeaderTop>
-                <Styled.MenuBar>
-                    <Avatar size={'sm'} name='VItor Santos' src='https://bit.ly/broken-link' />
-                    <i className={'las la-bars'}></i>
-                </Styled.MenuBar>
+                <Styled.HeaderRightContent>
+                    {user ? <Menu>
+                        <Styled.MenuBar>
+                            <Avatar size={'sm'} name={user.name} src='https://bit.ly/broken-link' />
+                            <i className={'las la-bars'}></i>
+                        </Styled.MenuBar>
+                        <MenuList>
+                            <MenuGroup title='Profile'>
+                                <MenuItem>Minha conta</MenuItem>
+                            </MenuGroup>
+                            <MenuDivider />
+                            <MenuGroup title='Help'>
+                                <MenuItem onClick={() =>signOut(router.pathname)}>Sair</MenuItem>
+                            </MenuGroup>
+                        </MenuList>
+                    </Menu> :
+                        <>
+                            <Button onClick={() => router.push('/account/login')}>Fazer login</Button>
+                            <Button onClick={() => router.push('/account/register')} colorScheme={'primary'}>Cadastre-se</Button>
+                        </>
+                    }
+                </Styled.HeaderRightContent>
+
+
+
+
             </Styled.HeaderTop>
             <Styled.HeaderSearchContainer>
                 <InputGroup>
@@ -26,3 +66,5 @@ export default function Header() {
         </Styled.HeaderContainer>
     )
 }
+
+export default Header

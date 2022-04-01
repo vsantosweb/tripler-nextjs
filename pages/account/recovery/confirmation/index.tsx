@@ -1,9 +1,8 @@
 import { NextPage } from 'next'
 import React from 'react'
-import { Button, FormControl, FormLabel, Heading, Input, Stack, Text } from '@chakra-ui/react'
-import { AccountButton } from '../../styles'
+import { Button, Heading, Stack, Text } from '@chakra-ui/react'
 
-export const Confirmation: NextPage = ({ layout , history}: any) => {
+export const RecoveryConfirmation: NextPage = ({ layout , history}: any) => {
 
     React.useEffect(() => layout('AuthLayout'), [])
     return (
@@ -17,4 +16,4 @@ export const Confirmation: NextPage = ({ layout , history}: any) => {
         </Stack>
     )
 }
-export default Confirmation;
+export default RecoveryConfirmation;

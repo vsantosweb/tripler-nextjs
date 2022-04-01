@@ -39,5 +39,6 @@ const GlobalStyles = css`
 export const ViewPort = styled.main`
   max-width: ${({ theme }: any) => theme.defaultContainer.width};
   height: 100%;
+  margin: auto;
 `;
 export default GlobalStyles;
